@@ -1,2 +1,2 @@
 # Flutter101
-My F;utter learning progress and projects
+My Flutter learning progress and projects
