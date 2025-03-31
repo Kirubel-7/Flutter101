@@ -5,11 +5,13 @@ void main() {
   var diff = v1 - v2; // subtraction
   var scaled = v1 * 2; // scalar multiplication
   var equality = v1 == Vector(3, 4); // equality check
-
+  var vector = Vector(7, 5);
+  var scaled2 = vector * 2;
   print('Vector Addition: (${sum})');
   print('Vector Subtraction: (${diff})');
   print('Vector Scalar Multiplication: (${scaled})');
   print('Vector Equality: ${equality}');
+  print(scaled2);
 }
 
 class Vector {
@@ -39,7 +41,7 @@ class Vector {
   @override
   int get hashCode => Object.hash(x, y);
 
-  //   @override
+  @override
   String toString() {
     return '$x, $y';
   }
