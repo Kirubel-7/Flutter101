@@ -51,3 +51,9 @@ class BankAccount {
     );
   }
 }
+
+class Test {
+  final int _secret;
+  final double _superSecret;
+  Test(int age, double wallet) : _secret = age, _superSecret = wallet;
+}
