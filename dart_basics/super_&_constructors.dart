@@ -18,7 +18,7 @@ abstract class Animal {
 }
 
 class Dog extends Animal {
-  Dog(super.legs);
+  Dog(super._legs);
 
   @override
   void sound() {

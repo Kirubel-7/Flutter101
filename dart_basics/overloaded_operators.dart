@@ -7,14 +7,19 @@ void main() {
   var equality = v1 == Vector(3, 4); // equality check
   var vector = Vector(7, 5);
   var scaled2 = vector * 2;
+  var comparison = v1.compareTo(v2);
+  print('Vector 1: ${v1}');
+  print('Vector 2: ${v2}');
   print('Vector Addition: (${sum})');
   print('Vector Subtraction: (${diff})');
   print('Vector Scalar Multiplication: (${scaled})');
   print('Vector Equality: ${equality}');
+  print('Vector Comparison: ${comparison}');
   print(scaled2);
+  print('\n---------------\n');
 }
 
-class Vector {
+class Vector implements Comparable<Vector> {
   final double x;
   final double y;
   Vector(this.x, this.y);
@@ -28,6 +33,13 @@ class Vector {
 
   Vector operator *(double scalar) {
     return Vector(this.x * scalar, this.y * scalar);
+  }
+
+  @override
+  int compareTo(Vector other) {
+    if (this.x < other.x && this.y < other.y) return -1;
+    if (this.x > other.x && this.y > other.y) return 1;
+    return 0;
   }
 
   @override
