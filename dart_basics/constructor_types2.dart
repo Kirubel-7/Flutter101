@@ -3,11 +3,32 @@ void main() {
   var p2 = BankAccount.savings('0987654321', 'Sara Alemu');
   var p3 = BankAccount.checking('5432167890', 'David Yohannes');
   var p4 = BankAccount.vipAccount('4567123890', 'Lily Getachew', 75000);
-
+  var person1 = person('Kirubel', 23, 'Male', 1234, 175.5);
+  print(person1.toString());
+  person1.display();
   p1.displayDetails();
   p2.displayDetails();
   p3.displayDetails();
   p4.displayDetails();
+}
+
+class person {
+  String _name;
+  int _id;
+  int _age;
+  String _gender;
+  double _height;
+  person(this._name, this._age, this._gender, this._id, this._height);
+  @override
+  String toString() {
+    return 'Name:$_name,ID:$_id,Age:$_age,Gender:$_gender';
+  }
+
+  void display([String bodyType = '']) {
+    print('from chewa, $bodyType');
+  }
+
+  String get name => _name;
 }
 
 class BankAccount {
@@ -52,8 +73,8 @@ class BankAccount {
   }
 }
 
-class Test {
-  final int _secret;
-  final double _superSecret;
-  Test(int age, double wallet) : _secret = age, _superSecret = wallet;
-}
+// class Test {
+//   final int _secret;
+//   final double _superSecret;
+//   Test(int age, double wallet) : _secret = age, _superSecret = wallet;
+// }

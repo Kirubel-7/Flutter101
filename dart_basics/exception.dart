@@ -10,6 +10,7 @@ class Fraction {
   Fraction(this._numerator, this._denominator) {
     if (_denominator == 0) throw NumberDivisionByZeroException();
   }
+
   int get numerator => _numerator;
   int get denominator => _denominator;
   set denominator(int den) {
@@ -29,9 +30,9 @@ class Fraction {
 
 void main() {
   try {
-    Fraction fraction = Fraction(1, 2);
+    final fraction = Fraction(1, 2);
     print(fraction);
-    fraction.denominator = 0;
+    fraction._numerator = 0;
     print(fraction);
   } on NumberDivisionByZeroException catch (ex) {
     print(ex);
