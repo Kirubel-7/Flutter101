@@ -43,3 +43,16 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+What Reviewers or Seniors Check
+A teammate or mentor might ask:
+
+❓Are all widgets inside lib/presentation/widgets?
+
+❓Are your models/entities clean and placed under domain/?
+
+❓Is there any business logic inside the UI files?
+
+❓Are you using setState where Riverpod/Bloc would be cleaner?
+
+❓Are you separating form validation from the widget?

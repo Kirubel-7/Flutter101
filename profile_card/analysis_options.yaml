@@ -9,20 +9,72 @@
 # packages, and plugins designed to encourage good coding practices.
 include: package:flutter_lints/flutter.yaml
 
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+# linter:
+#   # The lint rules applied to this project can be customized in the
+#   # section below to disable rules from the `package:flutter_lints/flutter.yaml`
+#   # included above or to enable additional rules. A list of all available lints
+#   # and their documentation is published at https://dart.dev/lints.
+#   #
+#   # Instead of disabling a lint rule for the entire project in the
+#   # section below, it can also be suppressed for a single line of code
+#   # or a specific dart file by using the `// ignore: name_of_lint` and
+#   # `// ignore_for_file: name_of_lint` syntax on the line or in the file
+#   # producing the lint.
+#   rules:
+#     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
+#     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+#      avoid_unused_constructor_parameters: true
 linter:
-  # The lint rules applied to this project can be customized in the
-  # section below to disable rules from the `package:flutter_lints/flutter.yaml`
-  # included above or to enable additional rules. A list of all available lints
-  # and their documentation is published at https://dart.dev/lints.
-  #
-  # Instead of disabling a lint rule for the entire project in the
-  # section below, it can also be suppressed for a single line of code
-  # or a specific dart file by using the `// ignore: name_of_lint` and
-  # `// ignore_for_file: name_of_lint` syntax on the line or in the file
-  # producing the lint.
   rules:
-    # avoid_print: false  # Uncomment to disable the `avoid_print` rule
-    # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+      # Naming & file style
+    file_names: true
+    library_prefixes: true
+    always_use_package_imports: true
+    prefer_relative_imports: false
+      # Avoid logic in UI
+    avoid_positional_boolean_parameters: true
+    avoid_setters_without_getters: true
+      # Clean Code & Safety
+    avoid_unused_constructor_parameters: true
+    await_only_futures: true
+    avoid_init_to_null: true
+    annotate_overrides: true
+    directives_ordering: true
+    empty_statements: true
+    hash_and_equals: true
+    implementation_imports: true
+    null_closures: true
+    package_api_docs: true
+    package_names: true
+    prefer_interpolation_to_compose_strings: true
+    prefer_if_null_operators: true
+    test_types_in_equals: true
+    throw_in_finally: true
+    type_init_formals: true
+    prefer_const_constructors: true
+    prefer_final_fields: true
+    unnecessary_const: true
+    unnecessary_null_in_if_null_operators: true
+    unnecessary_overrides: true
+    unnecessary_string_escapes: true
+    unnecessary_underscores: true
+     # Enforcing SOLID Principles and Clean Architecture
+    avoid_classes_with_only_static_members: true
+    avoid_dynamic_calls: true
+    avoid_returning_null_for_future: true
+    prefer_mixin: true
+    prefer_expression_function_bodies: true
+    use_super_parameters: true
+    always_put_required_named_parameters_first: true
+    depend_on_referenced_packages: true
+    avoid_types_on_closure_parameters: true
+    
+
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options

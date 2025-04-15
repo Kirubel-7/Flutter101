@@ -1,16 +1,38 @@
 # profile_card
+## 🧱 What You'll Learn
 
-A new Flutter project.
+- Flutter core widgets (`Container`, `Text`, `Row`, `Column`, `Stack`, etc.)
+- Layout design and responsiveness
+- Stateful widgets and interactivity
+- Navigation between screens
+- Project-based learning through real UI challenges
 
-## Getting Started
+## 📂 Suggested Folder Structure
 
-This project is a starting point for a Flutter application.
+lib/
+├── main.dart
+├── presentation/
+│   ├── pages/
+│   ├── widgets/
+├── domain/
+│   ├── models/
+├── data/
+│   ├── dummy/
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🧪 Bonus Challenges
+
+- Animate page transitions using `PageRouteBuilder`
+- Convert your widgets into reusable components
+- Practice using `MediaQuery` and `LayoutBuilder` for responsiveness
+
+---
+
+## ✅ Tips for Success
+
+- Code along the videos
+- Customize the UI to test your creativity
+- Organize your files early using Clean Architecture
+- Commit regularly if using Git
