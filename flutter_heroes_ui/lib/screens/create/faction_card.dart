@@ -17,6 +17,7 @@ class FactionCard extends StatelessWidget {
   Widget build(BuildContext context) => GestureDetector(
     onTap: () => onTap(faction),
     child: Container(
+      width: 217,
       padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
         //shape: BoxShape.rectangle,
